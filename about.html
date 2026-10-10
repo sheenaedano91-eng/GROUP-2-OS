@@ -5,6 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .section {
+            width: calc(100% - 230px);
+            margin-left: 230px;
+            min-height: 100vh;
+            padding: 60px 40px;
+        }
+
+        .about-box {
+            width: 100%;
+            max-width: 950px;
+        }
+
+        .about-box p {
+            overflow-wrap: break-word;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .section {
+                width: calc(100% - 190px);
+                margin-left: 190px;
+                padding: 40px 25px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 12px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .sidebar h2 {
+                width: 100%;
+                margin: 5px 0 12px;
+                font-size: 25px;
+            }
+
+            .sidebar a {
+                flex: 1 1 110px;
+                max-width: 180px;
+                margin: 5px;
+                padding: 12px 8px;
+                font-size: 14px;
+            }
+
+            .sidebar a:hover {
+                transform: translateY(-3px);
+            }
+
+            .section {
+                width: 100%;
+                margin-left: 0;
+                padding: 40px 20px;
+            }
+
+            .section h1 {
+                width: 100%;
+                max-width: 100%;
+                font-size: clamp(28px, 6vw, 40px);
+                padding: 20px 12px;
+            }
+
+            .about-box p {
+                margin: 15px 0;
+                padding: 20px;
+                font-size: clamp(16px, 3vw, 20px);
+                line-height: 1.7;
+            }
+        }
+
+        @media screen and (max-width: 380px) {
+            .section {
+                padding: 30px 12px;
+            }
+
+            .sidebar h2 {
+                font-size: 21px;
+            }
+
+            .sidebar a {
+                flex-basis: 100px;
+                font-size: 12px;
+                padding: 10px 5px;
+            }
+
+            .section h1 {
+                font-size: 27px;
+                padding: 16px 8px;
+            }
+
+            .about-box p {
+                padding: 15px;
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -14,11 +125,10 @@
         <a href="about.html">About</a>
         <a href="program.html">Academic Programs</a>
         <a href="contact.html">Contact Us</a>
-        <a href="quiz.html">School quiz </a>
+        <a href="quiz.html">School Quiz</a>
     </div>
 
     <div class="section about-section">
-
         <h1>About Our School</h1>
 
         <div class="about-box">
@@ -38,7 +148,6 @@
                 respectful, and hardworking members of the community.
             </p>
         </div>
-
     </div>
 
 </body>
